@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export const LoadingScreen = ({ onComplete }) => {
     const [text, setText] = useState("");
-    const navigate = useNavigate(); // Hook for navigation
+    const navigate = useNavigate();
 
     const fullText = "<Hello This is Pavithra Here.. />";
    
@@ -17,14 +17,14 @@ export const LoadingScreen = ({ onComplete }) => {
             if (index > fullText.length) {
                 clearInterval(interval);
                 setTimeout(() => {
-                    onComplete(); // Call the onComplete callback
-                    navigate("/"); // Navigate to the home page
+                    onComplete(); 
+                    navigate("/"); 
                 }, 1000);
             }
         }, 100);
 
         return () => clearInterval(interval);
-    }, [onComplete, navigate]); // Add navigate to the dependency array
+    }, [onComplete, navigate]); 
 
     return (
         <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
