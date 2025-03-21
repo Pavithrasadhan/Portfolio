@@ -62,7 +62,7 @@ export const Projects = () => {
   </div>
 
   <a
-    href="https://real-estate-frontend-wine-iota.vercel.app/"
+    href="https://real-estate-eta-steel.vercel.app/"
     target="_blank"
     rel="noopener noreferrer"
     className="
